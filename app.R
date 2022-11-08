@@ -938,8 +938,10 @@ server = function(input, output, session) {
     
     if (input$level_select=="Continent") {
       updatePickerInput(session = session, inputId = "region_select", 
-                        choices = c("Africa", "Asia", "Europe", "North America", "South America"), 
-                        selected = c("Africa", "Asia", "Europe", "North America", "South America"))
+                        choices = c("Africa", "Europe", "North America", "South America"), 
+                        selected = c("Africa",  "Europe", "North America", "South America"))
+                        #choices = c("Africa", "Asia", "Europe", "North America", "South America"), 
+                        #selected = c("Africa", "Asia", "Europe", "North America", "South America"))
     }
     
     if (input$level_select=="US state") {
